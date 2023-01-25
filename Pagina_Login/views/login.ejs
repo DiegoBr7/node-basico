@@ -1,0 +1,16 @@
+ <h2>FACA O LOGIN</h2>
+    
+     <form action="/login" method="post">
+      <input type="text" name="username" >
+      <input type="password" name="password" >
+      <input type="submit" name="action" value="login" >
+     </form>
+
+     <% if (message) { %>
+      <p>
+        <label style="color: red;" for=""><%= message %> </label>
+      </p>
+     <% } %>
+     <p>
+      <a href="/users/forgot">Esqueceu sua senha?</a> | <a href="/user/signup">Não possui cadastro?</a>
+     </p>
